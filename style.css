@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #69677b;
+
+}
+body{
+    background-color: #f8feff;
+}
+.container{
+    width: 80%;
+    display: flex;
+    border: 5px solid #edecf3;
+    border-radius: 50px;
+    height: fit-content;
+    padding: 0 30px;
+    flex-direction: column;
+    background-color: #fffdff;
+    margin: 50px;
+}
+.back-image img{
+    width: 100%;
+}
+.form-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container .logo h1{
+    color: #908bbe;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 20px;
+}
+.container .logo h2{
+    font-size: 18px;
+    color: #69677b;
+    margin-left: 20px;
+}
+.container .logo{
+    display: flex;
+    align-items: center;
+
+}
+.container .form-area form{
+    display: flex;
+    border: 5px solid #edecf3;
+    border-radius: 50px;
+    padding-block: 50px;
+    margin: 40px 50px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 50%;
+}
+.container .form-area form h3{
+    font-size: 25px;
+    color: #908bbe;
+}
+.container .form-area form input{
+    /* font-size: 20px; */
+    margin-block: 20px;
+    border: 1px solid #bdb8f2;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 100;
+    outline: none;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    
+}
+.container .form-area form input::placeholder{
+    color: #d0d0d0;
+    font-weight: 100;
+}
+.container .form-area form button{
+    padding: 10px 30px;
+    font-weight: bold;
+    color: #908bbe;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #bdb8f2;
+    border-radius: 10px;
+}
+.container .form-area form button:hover{
+    background: #bdb8f2;
+    border: 1px solid #bdb8f2;
+    color: #fff;
+}
+select{
+    padding: 10px 20px;
+    font-weight: 500;
+    border: 1px solid #bdb8f2;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 2.3rem;
+    margin-block: 1rem;
+
+}
+.input-field label{
+    font-size: 14px;
+    margin-left: 5px;
+}
+/* Default styles for larger screens */
+body {
+    background-color: white;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 1340px) {
+    .container .form-area form{
+        width: 100%;
+    }
+  }
+  @media (max-width: 1150px) {
+    .back-image{
+        width: 500px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .back-image{
+        display: none;
+    }
+  }
+  @media (max-width: 578px) {
+    .container .form-area form{
+        border: none;
+        width: 100%;
+    }
+    
+    .input-field{
+        width: 70vw;
+    }
+  }

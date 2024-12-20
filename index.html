@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day 5</title>
+</head>
+<body style="display: flex;justify-content: center;align-items: center; height: 100vh;">
+    
+    <div class="container">
+        <div class="logo">
+            <h1>Logo</h1>
+            <h2></h2>
+        </div>
+        <div class="form-area">
+            <form action="#">
+                <h3>Login</h3>
+                <div class="input-field">
+                    <input type="text" name="" id="FullName" value="" placeholder="Enter Fullname" onkeyup="pressInput(this)">
+                    <label for="FullName" id="fullnameVal"></label>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Enter Email" onkeyup="pressInput(this)">
+                    <label for="email" id="emailVal"></label>
+    
+                </div>
+                <div class="input-field">
+                    <input type="password" name="" id="password" placeholder="Enter password" onkeyup="pressInput(this)">
+                    <label for="password" id="passwordVal"></label>
+    
+                </div>
+                <div class="input-field">
+                    <input type="password" name="" id="passwordConfirmation" placeholder="Confirm password" onkeyup="pressInput(this)">
+                    <label for="password" id="passworCondVal"></label>
+    
+                </div>
+                <div>
+                <button type="submit" onclick="login(event)">Login</button>
+    
+                </div>
+            </form>
+            <div class="back-image">
+                <img src="imgages/comimg4.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
